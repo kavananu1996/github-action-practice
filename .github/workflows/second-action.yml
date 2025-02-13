@@ -5,4 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: greeting
-        run: echo "hello"
+        run: |
+          echo "hello"
+          ls -lrt
+      - name: checkout
+        uses: actions/checkout@v3
+        with:
+          brach: main
