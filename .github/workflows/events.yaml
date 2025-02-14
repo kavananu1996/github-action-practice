@@ -3,6 +3,7 @@ on:
   pull_request:
     types:
       - opened
+      - closed
 jobs:
   test:
     runs-on: ubuntu-latest
