@@ -2,11 +2,10 @@ name: trigger workflow based on events
 on: 
   pull_request:
     types:
-      - created
       - opened
 jobs:
   test:
-    runs_on: linux-latest
+    runs-on: linux-latest
     steps:
       - name: checkout
         uses: actions/checkout@v3
