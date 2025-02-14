@@ -3,6 +3,7 @@ on:
   pull_request:
     types:
       - created
+      - opened
 jobs:
   test:
     runs_on: linux-latest
